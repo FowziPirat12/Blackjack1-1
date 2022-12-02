@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace BlackJack_1
 
@@ -27,14 +27,16 @@ namespace BlackJack_1
 
                 case 1:
 
-                    int Spelare = slump.Next(11);
-                    int Dator = slump.Next(11);
+                    int Spelare = slump.Next(1, 11);
+                    int Spelare2 = slump.Next(1, 11);   
+                    int Dator = slump.Next(1,11);
+
 
 
                     Console.WriteLine("Nu kommer två kort att dras");
 
 
-                    Console.WriteLine("Din poäng:" + Spelare + Spelare);
+                    Console.WriteLine("Din poäng:"  + (Spelare + Spelare2 ));
 
 
                     Console.WriteLine("Datorns poäng:" + slump.Next(1, 11));
@@ -58,7 +60,7 @@ namespace BlackJack_1
                 case 3:
 
 
-                    Console.WriteLine();
+                    
 
 
                     break;
@@ -85,5 +87,6 @@ namespace BlackJack_1
 
 
 }
+
 
 
